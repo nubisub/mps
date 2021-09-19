@@ -3,12 +3,13 @@ library(survey)
 library(prob)
 
 #Buat Tabel dulu gan
-stratified<-data.frame(tinggi =c(167,160,168,157,168,161,157,162,151,161,167,166,157,157),
+stratified<-data.frame(stratified =c(155, 157, 168, 163, 151, 167, 159,
+                                     156, 170, 163, 174, 167, 161, 173),
                        posisi=c(rep('jawa',11),rep('luarjawa',3)),
                        N =c(rep(25,11),rep(10,3)))
 #design dulu
 designstrat<-svydesign(ids = ~1,fpc = ~N,strata = ~posisi, data = stratified) 
 #mean sama standard error
-svymean(~tinggi, design = designstrat) 
+svymean(~stratified, design = designstrat) 
 #confidental interval
-confint(svymean(~tinggi, design = designstrat),level = 0.95)
+confint(svymean(~stratified, design = designstrat),level = 0.95)

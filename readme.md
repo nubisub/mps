@@ -1,1 +1,1 @@
-# Metode Penarikan Sampel
+# mps

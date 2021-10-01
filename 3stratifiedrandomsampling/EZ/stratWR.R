@@ -14,3 +14,5 @@ svymean(~stratified, design = designstrat)
 #confidental interval
 confint(svymean(~stratified, design = designstrat),level = 0.95)
 
+#Metode Penarikan Sampel Stratified
+#Metode Penarikan Contoh Stratified

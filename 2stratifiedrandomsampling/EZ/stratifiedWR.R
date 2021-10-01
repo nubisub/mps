@@ -14,3 +14,5 @@ svymean(~tinggi, design = designstrat)
 #confidental interval
 confint(svymean(~tinggi, design = designstrat),level = 0.95)
 
+#Metode Penarikan Sampel
+#Metode Penarikan Contoh

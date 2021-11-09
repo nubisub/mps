@@ -28,3 +28,4 @@ designwor<-svydesign(ids = ~1, data = samplewor,fpc=~fpc)
 svymean(~tinggi, design = designwor) #estimasi rata-rata & standard error = sqrt(var)
 confint(svymean(~tinggi, design = designwor)) #confidental interval
 
+confint()
